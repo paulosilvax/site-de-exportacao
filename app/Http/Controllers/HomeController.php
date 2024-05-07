@@ -7,5 +7,13 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    //
+    /**
+     * Rendeniza a página de contato
+     * 
+     * @return View
+    */
+    public function home()
+    {
+        return view('app.home');
+    }
 }

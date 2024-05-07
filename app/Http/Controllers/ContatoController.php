@@ -25,12 +25,14 @@ class ContatoController extends Controller
     */
     public function enviarFormulario(Request $request)
     {
+        dd($request->all());
+        
         try {
             Contato::create([
-                'nome' => $request->nome,
+                'nome' => $request->name,
                 'email' => $request->email,
-                'mensagem' => $request->mensagem,
-                'assunto' => $request->assunto,
+                'mensagem' => $request->message,
+                'assunto' => $request->subject, //assunto
                 'telefone' => $request->telefone,
             ]);
     

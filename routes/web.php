@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContatoController;
 //use App\Http\Controllers\ProdutosController;
 use App\Http\Controllers\SobreController;
@@ -15,5 +16,7 @@ Route::get('/sobre-nos', function () {
 })->name('sobre-nos');
 
 */
+Route::get('/home', [HomeController::class, 'home'])->name('home');
 Route::get('/contato', [ContatoController::class, 'contato'])->name('contato');
+Route::post('/contato', [ContatoController::class, 'enviarFormulario'])->name('contato.submit'); 
 Route::get('/sobre-nos', [SobreController::class, 'sobreNos'])->name('sobre-nos');
