@@ -1,3 +1,87 @@
-a {
-    color:red
+/* Estilos para o footer */
+.footer-bg {
+    background-color: #2A66DA;
+    color: #fff;
+    padding: 50px 0 0 0; /* Remove o padding inferior */
+    width: 100%;
+}
+
+.footer-bg .dl-btn {
+    color: #fff;
+}
+
+.footer-bg .dl-btn a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.footer-bg .dl-btn a:hover {
+    text-decoration: underline;
+}
+
+.footer-bg ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-bg ul li {
+    margin-bottom: 10px;
+}
+
+.footer-bg ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bg ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bg .fl-us {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-bg .fl-us li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-bg .fl-us li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bg .fl-us li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bg p {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.footer-logo {
+    border: 2px solid #fff; /* Borda branca */
+    border-radius: 50%; /* Borda arredondada */
+    padding: 5px; /* Espaçamento interno para separar a borda da imagem */
+}
+
+.footer-bottom {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto; /* Adiciona margem automática na parte superior */
+}
+
+.github {
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+}
+
+nav {
+    width: 100%;
 }

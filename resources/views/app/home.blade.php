@@ -5,29 +5,7 @@
 @endsection
 
 @section('css')
-    <style>
-        .card-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .card {
-            width: 300px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            margin: 10px; /* Adicionando margem em vez de margem inferior */
-            padding: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-        }
-        .card img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .card p {
-            margin-top: 10px;
-        }
-    </style>
+<link rel="stylesheet" href="{{asset('css/home.css')}}">    
 @endsection
 
 @section('body')
