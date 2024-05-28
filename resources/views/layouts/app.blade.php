@@ -8,14 +8,14 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
     @yield('css')
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-primary-subtle">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{route('home')}}">DiversArts</a>
+            <a class="navbar-brand" href="{{route('home')}}">DiversArs</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -47,7 +47,7 @@
                     <div class="col-lg-3">
                         <div class="dl-btn">
                             <div class="mt-2">
-                                <img src="#" alt="Logo do site" class="logo footer-logo" href="#">
+                                <img src="{{asset('src/logo.jpg')}}" alt="Logo do site" class="logo footer-logo">
                             </div>
                         </div>
                     </div>
@@ -70,14 +70,14 @@
                         </ul>
                         <div class="mt-2">
                             <a target="_blank" href="#" rel="nofollow">
-                                <img src="src/github.png" class="github" href="#">
+                                <img src="{{asset('src/github.png')}}" class="github" href="#">
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 text-center mt-4">
-                        <p class="footer-bottom">© 2024 DiversArts. Todos os direitos reservados.</p>
+                        <p class="footer-bottom">© 2024 DiversArs. Todos os direitos reservados.</p>
                     </div>
                 </div>
             </div>

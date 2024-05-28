@@ -16,4 +16,14 @@ class HomeController extends Controller
     {
         return view('app.home');
     }
+
+    /**
+     * Rendeniza a página de contato
+     * 
+     * @return View
+    */
+    public function produto()
+    {
+        return view('app.produto');
+    }
 }

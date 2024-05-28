@@ -34,7 +34,7 @@ class CategoriaController extends Controller
                 'descricao' => $request->subject, //descricao
             ]);
     
-            return back()->withSucess('Formulário enviado');
+            return redirect()->route('categorias.index');
 
         } catch (Exception $exception) {
             return back()->withErrors($exception->getMessage());
