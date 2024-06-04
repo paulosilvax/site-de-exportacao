@@ -13,7 +13,7 @@
     @yield('css')
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary-subtle">
+    <nav class="navbar navbar-expand-lg bg-primary-subtle mb-8">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{route('home')}}">DiversArs</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +69,7 @@
                             <li>Repositório do Projeto</li>
                         </ul>
                         <div class="mt-2">
-                            <a target="_blank" href="#" rel="nofollow">
+                            <a target="_blank" href="https://github.com/paulosilvax/site-de-exportacao" rel="nofollow">
                                 <img src="{{asset('src/github.png')}}" class="github" href="#">
                             </a>
                         </div>

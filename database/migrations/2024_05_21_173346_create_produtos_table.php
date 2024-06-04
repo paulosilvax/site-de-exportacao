@@ -15,10 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('nome');
             $table->float('preco', 10, 2);
-            $table->string('cor', 30)->nullable();
-            $table->string('tamanho', 15)->nullable();
             $table->text('descricao')-> nullable();
             $table->unsignedBigInteger('categoria_id');
+            $table->text('img_url')->nullable();
             $table->timestamps();
         });
     }

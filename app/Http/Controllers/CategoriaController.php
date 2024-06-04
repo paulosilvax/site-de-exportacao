@@ -31,12 +31,13 @@ class CategoriaController extends Controller
         try {
             Categoria::create([
                 'nome' => $request->name,
-                'descricao' => $request->subject, //descricao
+                'descricao' => $request->descricao, //descricao
             ]);
     
             return redirect()->route('categorias.index');
 
         } catch (Exception $exception) {
+            dd($exception);
             return back()->withErrors($exception->getMessage());
         }
     }
@@ -62,6 +63,8 @@ class CategoriaController extends Controller
      */
     public function destroy(Categoria $categoria)
     {
-        //
+        $categoria->delete();
+        
+        return redirect()->route('categorias.index');
     }
 }

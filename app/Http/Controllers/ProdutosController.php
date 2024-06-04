@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Categoria;
 use Illuminate\Http\Request;
 use Exception;
+use Illuminate\Support\Str;
 
 class ProdutosController extends Controller
 {
@@ -24,24 +25,31 @@ class ProdutosController extends Controller
     {
         $categorias = Categoria::all();
 
-        return view('admin.produtos.create', ['categorias'=>$categorias]);
+        return view('admin.produtos.create', ['categorias' => $categorias]);
     }
+
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        try {
+        try {            
+            $imgName = Str::random(5) .'.'. $request->file('file')->getClientOriginalExtension();
+
             Produto::create([
                 'nome' => $request->name,
-                'descricao' => $request->subject, //descricao
-                'categoria_id'=>$request->categoria,
+                'descricao' => $request->descricao,
+                'categoria_id' => (int)$request->categoria,
+                'preco' => $request->preco,
+                'img_url' => $imgName
             ]);
-    
-            return back()->withSucess('Formulário enviado');
+
+            $request->file('file')->storeAs('public/produtos', $imgName);
+
+            return redirect()->route('produtos.index');
 
         } catch (Exception $exception) {
-            return back()->withErrors($exception->getMessage());
+            dd($exception);
         }
     }
 
@@ -66,6 +74,8 @@ class ProdutosController extends Controller
      */
     public function destroy(Produto $produto)
     {
-        //
+        $produto->delete();
+        
+        return redirect()->route('produtos.index');
     }
 }

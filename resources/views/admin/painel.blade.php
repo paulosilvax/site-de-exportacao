@@ -9,7 +9,8 @@
 @endsection
 
 @section('body')
-    <a href="{{route('categorias.create')}}">Categorias</a>
+    <a class="btn btn-primary" href="{{route('categorias.create')}}">Categorias</a>
+    <a class="btn btn-primary" href="{{route('produtos.create')}}">Produtos</a>
 @endsection
 
 @section('js')

@@ -2,7 +2,7 @@
 
 @section('title')
 
-    <title>Contato</title>
+    <title>Categoria</title>
 
 @endsection
 
@@ -19,6 +19,7 @@
                         <th>#ID</th>
                         <th>Nome</th>
                         <th>Descrição</th>
+                        <th>Ação</th>
                     </thead>
                     <tbody>
                         @forelse ($categorias as $categoria)
@@ -26,6 +27,13 @@
                                 <td>{{$categoria->id}}</td>
                                 <td>{{$categoria->nome}}</td>
                                 <td>{{$categoria->descricao}}</td>
+                                <td>
+                                    <form action="{{route('categorias.destroy', ['categoria' => $categoria->id])}}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <input type="submit" value="deletar">
+                                    </form>
+                                </td>
                             </tr>    
                         @empty
                             <tr>

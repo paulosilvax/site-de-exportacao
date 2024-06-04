@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col"></div>
             <div class="col-4">
-                <form action="{{route('produtos.store')}}" method="post" class="mb-5 mt-5">
+                <form action="{{route('produtos.store')}}" method="post" class="mb-5 mt-5" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-3">
                         <label class="form-label">Nome</label>
@@ -22,7 +22,7 @@
                     <div class="mb-3">
                         <select name="categoria" id="">
                             @forelse ($categorias as $categoria)
-                                <option value="{{$categoria->id}}">{{$categoria->name}}</option>
+                                <option value="{{$categoria->id}}">{{$categoria->nome}}</option>
                             @empty
                                 <option value="">Sem categorias</option>
                             @endforelse
@@ -33,8 +33,12 @@
                         <textarea rows="3" class="form-control" name="descricao"></textarea>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Descrição</label>
-                        <textarea rows="3" class="form-control" name="descricao"></textarea>
+                        <label class="form-label">Valor</label>
+                        <textarea rows="3" class="form-control" name="preco"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Default file input example</label>
+                        <input class="form-control" name="file" type="file" id="formFile">
                     </div>
                     <button type="submit" class="form-control btn btn-outline-success " value="enviar">Enviar</button>
                 </form>

@@ -6,6 +6,7 @@ use App\Http\Controllers\ProdutosController;
 use App\Http\Controllers\SobreController;
 use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\PainelAdminController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,3 +27,6 @@ Route::get('/produto', [HomeController::class, 'produto'])->name('produto');
 Route::get('/painel-adm', [PainelAdminController::class, 'painel'])->name('painel');
 Route::resource('categorias', CategoriaController::class);
 Route::resource('produtos', ProdutosController::class);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

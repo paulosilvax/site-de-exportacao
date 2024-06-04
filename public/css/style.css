@@ -1,3 +1,11 @@
+nav {
+    margin-bottom: 10%;
+}
+
+footer {
+    margin-top: 10%;
+}
+
 /* Estilos para o footer */
 .footer-bg {
     background-color: #2A66DA;
