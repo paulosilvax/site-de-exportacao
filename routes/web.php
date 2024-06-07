@@ -27,6 +27,8 @@ Route::get('/produto', [HomeController::class, 'produto'])->name('produto');
 Route::get('/painel-adm', [PainelAdminController::class, 'painel'])->name('painel');
 Route::resource('categorias', CategoriaController::class);
 Route::resource('produtos', ProdutosController::class);
+Route::get('/biografia', [HomeController::class, 'biografia'])->name('biografia');
+Route::get('/compra', [HomeController::class, 'compra'])->name('compra');
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('home');

@@ -33,6 +33,30 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('contato')}}">Contato</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('biografia')}}">Biografías</a>
+                </li>
+                <li class="nav-item">
+                    @auth
+                        <a href="{{route('painel')}}" method="post">
+                            @csrf
+                            <input type="submit" value="Painel">
+                        </a>
+                    @else
+                        
+                    @endauth
+                </li>
+                <li class="nav-item">
+                    @auth
+                        <form action="{{route('logout')}}" method="post">
+                            @csrf
+                            <input type="submit" value="Logout">
+                        </form>
+                    @else
+                        <a class="nav-link" href="{{route('login')}}">Login</a>
+                    @endauth
+                </li>
+                
             </ul>
             </div>
         </div>

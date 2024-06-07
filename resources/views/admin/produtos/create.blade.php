@@ -17,10 +17,10 @@
                     @csrf
                     <div class="mb-3">
                         <label class="form-label">Nome</label>
-                        <input type="text" name="name" class="form-control" placeholder="Digite seu nome">
+                        <input type="text" name="name" class="form-control" placeholder="Digite seu nome" require>
                     </div>
                     <div class="mb-3">
-                        <select name="categoria" id="">
+                        <select name="categoria" id="" require>
                             @forelse ($categorias as $categoria)
                                 <option value="{{$categoria->id}}">{{$categoria->nome}}</option>
                             @empty
@@ -30,15 +30,15 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Descrição</label>
-                        <textarea rows="3" class="form-control" name="descricao"></textarea>
+                        <textarea rows="3" class="form-control" name="descricao" require></textarea>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Valor</label>
-                        <textarea rows="3" class="form-control" name="preco"></textarea>
+                        <input type="number" min="0" class="form-control" name="preco" require></input>
                     </div>
                     <div class="mb-3">
-                        <label for="formFile" class="form-label">Default file input example</label>
-                        <input class="form-control" name="file" type="file" id="formFile">
+                        <label for="formFile" class="form-label">Escolha a imagem do produto</label>
+                        <input class="form-control" name="file" type="file" id="formFile" require>
                     </div>
                     <button type="submit" class="form-control btn btn-outline-success " value="enviar">Enviar</button>
                 </form>

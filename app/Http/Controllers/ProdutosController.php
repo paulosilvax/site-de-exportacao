@@ -58,7 +58,7 @@ class ProdutosController extends Controller
      */
     public function show(Produto $produto)
     {
-        return view('admin.produtos.show', $produto);
+        return view('app.compra', ['produto' => $produto]);
     }
 
     /**
