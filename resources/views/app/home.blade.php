@@ -19,7 +19,7 @@
     @forelse ($produtos as $produto)
         
             <div class="card">
-                <img src="{{asset('storage/produtos'.$produto->img_url)}}">
+                <img src="{{asset('storage/produtos/'.$produto->img_url)}}">
                 <p>{{$produto->nome}}</p>
                 <p>R$ {{$produto->preco}}</p>
                 <a href="{{route('produtos.show',['produto'=>$produto->id])}}">Ver Mais</a>
