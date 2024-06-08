@@ -34,7 +34,7 @@
                     <a class="nav-link" href="{{route('contato')}}">Contato</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('biografia')}}">Biografías</a>
+                    <a class="nav-link" href="{{route('biografia')}}">Biografias</a>
                 </li>
                 <li class="nav-item">
                     @auth
