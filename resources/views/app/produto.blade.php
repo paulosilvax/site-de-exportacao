@@ -5,7 +5,7 @@
 @endsection
 
 @section('css')
-    
+  
 @endsection
 
 @section('body')

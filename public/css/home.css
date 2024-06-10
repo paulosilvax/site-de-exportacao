@@ -1,21 +1,172 @@
-.card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+/* Estilos para os cards */
+body {
+    background-color: #A8C0B0;
 }
 .card {
     width: 300px;
+    height: 400px;
     border: 1px solid #ccc;
     border-radius: 8px;
     margin: 10px; /* Adicionando margem em vez de margem inferior */
-    padding: 10px;
+    padding: 2px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: #ffffff;
+    text-align: center;
 }
+
 .card img {
     width: 100%;
     border-radius: 8px;
 }
+
 .card p {
     margin-top: 10px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.card a {
+    display: block;
+    background-color: blue;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: auto; /* Adicionando margem superior automática */
+}
+
+.card a:hover {
+    background-color: #0040ff;
+}
+
+/* Estilos para a página Home, excluindo os cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2px;
+}
+
+.mvv {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mvv p {
+    margin-bottom: 10px;
+}
+
+/* Estilos específicos para os elementos de missão, visão e valores, se necessário */
+
+.botom {
+    text-align: center;
+}
+
+.botom a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botom a:hover {
+    background-color: #45a049;
+}
+/* Estilos para os cards */
+.card {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 4px;
+    padding: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card p {
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.card a {
+    display: block;
+    background-color: blue;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.card a:hover {
+    background-color: #0040ff;
+}
+
+/* Estilos para a página Home, excluindo os cards */
+.mvv-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.mvv-box {
+    width: calc(33.33% - 10px);
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.mvv-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.mvv-box.missao {
+    background-color: #71967C;
+}
+
+.mvv-box.visao {
+    background-color: #71967C;
+}
+
+.mvv-box.valores {
+    background-color: #71967C;
+}
+
+.botom {
+    text-align: center;
+}
+
+.botom a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botom a:hover {
+    background-color: #45a049;
 }
