@@ -58,7 +58,9 @@ class ProdutosController extends Controller
      */
     public function show(Produto $produto)
     {
-        return view('app.compra', ['produto' => $produto]);
+        $categorias = Categoria::all();
+
+        return view('app.compra', ['produto' => $produto, 'categoria' => $categorias]);
     }
 
     /**

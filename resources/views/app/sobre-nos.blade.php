@@ -42,7 +42,7 @@
                     <p>II:</p>
                     <p>Gabriel Gouveia dos Santos, Paulo Cardoso Silva e Wendel Mendes Rodrigues</p>
                     <p>ADM:</p>
-                    <p>Não definido!</p>
+                    <p>Angélica Cristina da Silva Santos, Iara dos Santos e Silva, Júlia Rocha de Araújo, Jennifer de Jesus Santos, Milena Nunes da Silva, Rafaella Santos Moura e Vitória Caroline Ribeiro da Silva</p>
                 </div>
             </div>
         </div>

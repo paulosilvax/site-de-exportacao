@@ -11,10 +11,11 @@
 }
 
 .produto-img {
-    width: 800px; /* Ajuste conforme necessário */
+    width: 550px; /* Ajuste conforme necessário */
     height: auto;
     border-radius: 8px;
-    margin-right: 20px;
+    margin-right: 60px;
+    margin-left: 20px;
 }
 
 .produto-info {

@@ -15,5 +15,7 @@
 @section('js')
     <script>
         console.log("Estou na página Produtos");
+
+        
     </script>
 @endsection
